@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Friends / Gallery — photos and captions.">
+  <title>Friends / Gallery — Bisma</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="common_style.css" />
+
+  <!-- Embedded style block -->
+  <style>
+    .gallery figcaption { text-align: center; padding: 0.6rem 0; }
+    .gallery figure { display: block; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html">Bisma Mohasin Shaikh</a>
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="aboutme.html">About Me</a></li>
+        <li><a class="nav-link" href="blog.html">Blog</a></li>
+        <li><a class="nav-link active" href="friends.html" aria-current="page">Friends</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="gallery">
+      <h1 id="gallery">Friends Gallery</h1>
+
+      <section class="grid-gallery gallery" aria-live="polite">
+        <figure class="card-custom card">
+          <picture>
+            <source srcset="images/f4.webp" type="image/webp">
+            <img src="images/f4.jpg" alt="Friend 4 portrait">
+          </picture>
+          <figcaption><strong>Friend 4</strong><br><span class="small-muted">My Sweetheart</span></figcaption>
+        </figure>
+
+        <figure class="card-custom card">
+          <picture>
+            <source srcset="images/f3.webp" type="image/webp">
+            <img src="images/f3.jpg" alt="Friend 3 portrait">
+          </picture>
+          <figcaption><strong>Friend 3</strong><br><span class="small-muted">My Therapist</span></figcaption>
+        </figure>
+
+        <figure class="card-custom card">
+          <picture>
+            <source srcset="images/f5.webp" type="image/webp">
+            <img src="images/f5.jpg" alt="Friend 5 portrait">
+          </picture>
+          <figcaption><strong>Friend 5</strong><br><span class="small-muted">My Forever Person</span></figcaption>
+        </figure>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p class="small-muted">Gallery of my dear friends</p>
+  </footer>
+</body>
+</html>
